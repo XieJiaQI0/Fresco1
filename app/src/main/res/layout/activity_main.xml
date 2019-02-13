@@ -5,16 +5,65 @@
     android:layout_height="match_parent"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-
+    android:orientation="vertical"
     >
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_yuanjiao"
+        android:text="圆角"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_yuanxing"
+        android:text="圆形"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_bili"
+        android:text="比例1:2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jianjinshi"
+        android:text="渐进式"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cipanhuanxun"
+        android:text="磁盘缓存"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jiazaidonghua"
+        android:text="加载动画"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_jiazaijianting"
+        android:text="加载监听"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_peizhi"
+        android:text="配置OkHttp"
+        />
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:id="@+id/my_image"
+        fresco:viewAspectRatio="1.0"
         fresco:placeholderImage="@drawable/icon"
-        fresco:roundAsCircle="true"
         />
-
-
 </LinearLayout>
